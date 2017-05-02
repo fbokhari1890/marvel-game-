@@ -1,0 +1,24 @@
+{
+  "name": "project_2",
+  "version": "1.0.0",
+  "description": "using the marvel api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/fbokhari1890/project_2.git"
+  },
+  "author": "Fahim the dream",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "morgan": "^1.8.1"
+  }
+}
+
+
+
