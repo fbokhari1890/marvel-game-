@@ -1,10 +1,25 @@
 {
   "name": "project_2",
   "version": "1.0.0",
-  "description": "using the marvel api",
+  "description": "Growing up I was always mesmerized by the superheroes and their ability to be provided with supernatural powers.  The acts of altruism speaks to the human spirit and our intate drive to seek goodness.  The reminscing back to the  nostalgia running through comicbook stores as a child inspired me to tap into the Marvel Universe to create an application that list all the superheroes that became staples of my childhood.",
   "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "method-override": "^2.3.8",
+    "morgan": "^1.8.1",
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7",
+    "pg-promise": "^5.6.7"
+  },
+  "devDependencies": {
+    "jest": "^19.0.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
@@ -12,13 +27,6 @@
     "type": "git",
     "url": "https://git.generalassemb.ly/fbokhari1890/project_2.git"
   },
-  "author": "Fahim the dream",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
-    "method-override": "^2.3.8",
-    "morgan": "^1.8.1",
-    "pg-promise": "^5.6.7"
-  }
+  "author": "",
+  "license": "ISC"
 }

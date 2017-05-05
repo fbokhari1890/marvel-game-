@@ -1,0 +1,49 @@
+<!--<% include ../partials/boilerplate %>
+
+<div class = 'hero'> 
+<% hero.Data.forEach (function(hero) { %>
+
+<div class = 'my-hero'>
+  <h2 class = 'name'> <%= hero.name %> </h2>
+  <h2 class = 'name'> <%= hero.realname %> </h2>
+  <h2 class = 'name'> <%= hero.location %> </h2>
+
+  <a href='/hero/edit/<%= hero.id %>'>Edit quote</a>
+   <form 
+   method='POST' action='/hero/<%= hero.id %>?_method=DELETE'>
+   <input type='submit' value='Delete it!' />
+   </form>
+
+ </div>  
+   <% }) %>
+
+</div>   
+
+
+
+</div>
+
+<% include ../partials/end %>
+
+
+
+
+<a href='/quotes/add'>Add a quote!</a>
+
+<div class='quotes'>
+  <% quotesData.forEach(function(quote) { %>
+    <div class='my-quote'>
+      <h3><%= quote.content %></h3>
+      <div class='meta'>
+        <span class='author'><%= quote.author %></span>
+        <span class='genre'><%= quote.genre_id %></span>
+      </div>
+      <a href='/quotes/<%= quote.id %>'>Go to page</a>
+      <a href='/quotes/edit/<%= quote.id %>'>Edit quote</a>
+      <form method='POST' action='/quotes/<%= quote.id %>?_method=DELETE'>
+        <input type='submit' value='Delete it!' />
+      </form>
+    </div>
+  <% }) %>
+</div>
+-->
