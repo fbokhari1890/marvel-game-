@@ -29,7 +29,7 @@ controller.show = (req,res) => {
     });
 };
 
-controller.create= (req,res) => {
+controller.create = (req,res) => {
   Hero.create({
     name: req.body.name,
     realname: req.body.name,
@@ -37,7 +37,7 @@ controller.create= (req,res) => {
     description: req.body.description,
   })
       .then(hero=> {
-        res.direct('/hero');
+        res.redirect('/hero');
   })
     .catch(err=> {
       res.status(400).json(err);
@@ -68,7 +68,7 @@ controller.update = (req,res) =>{
     description: req.body.description,
   }, req.params.id)
     .then(hero=>{
-      res.direct('/hero');
+      res.redirect('/hero');
     })
     .catch(err=>{
       res.status(400).json(err);
@@ -76,9 +76,9 @@ controller.update = (req,res) =>{
   };
 
 controller.destroy = (req,res)=> {
-  Hero.detroy(req.params.id)
+  Hero.destroy(req.params.id)
     .then(() =>{
-      res.redirect('hero');
+      res.redirect('/hero');
     })
     .catch(err => {
       res.status(400).json(err);

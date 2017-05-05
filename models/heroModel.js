@@ -33,8 +33,8 @@ Hero.update = (hero, id) => {
      name = $1,
      realname = $2,
      location_id = $3,
-     description = $4,
-     WHERE ID = $4
+     description = $4
+     WHERE id = $4
     `, 
 
     [hero.name,hero.realname, hero.location_id, hero.description,id] 

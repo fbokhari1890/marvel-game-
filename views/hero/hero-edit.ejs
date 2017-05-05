@@ -1,39 +1,15 @@
-<% include ./partials/boilerplate %>
+<% include ../partials/boilerplate %>
 
-<form method = 'POST' action = '/hero/<%=id %>?_method=PUT'>
+<form method = 'POST' action = '/hero/<%= id %>?_method=PUT'>
   <input name = 'name' type = 'text' value= '<%= hero.name %>' />
   <input name = 'real name' type='text' value= '<%= hero.realname %>' />
   <input name = 'location' type  = 'text' value= '<%= hero.location %>' />
   <input  name= 'descroption' type = 'text'value=' <%= hero.description %>'/>
   <input type='submit' value='Edit it!' />
-
 </form>
 
-<% include ./partials/end %>
+<% include ../partials/end %>
 
 
 
-
-<!--<form method = 'POST' action = '/hero/<%=id %>?_method=PUT'>
-  <input name = 'name' type = 'text' value= '<%= hero.name %>' />
-  <input name = 'real name' type='text' value= '<%= hero.realname %>' />
-  <input name = 'location' type  = 'text' value= '<%= hero.location %>' />
-  <input  name= 'descroption' type = 'text'value=' <%= hero.description %>'/>
-  <input type='submit' value='Edit it!' />
-
-</form>-->
-
-
-
-<!--
-  <% include ../partials/boilerplate %>
-
-<form method='POST' action='/quotes/<%= id %>?_method=PUT'>
-  <input name='content' type='text' value='<%= quote.content %>' />
-  <input name='author' type='text' value='<%= quote.author %>' />
-  <input name='genre_id' type='text' value='<%= quote.genre_id %>' />
-  <input type='submit' value='Edit it!' />
-</form>
-
-<% include ../partials/end %>-->
 
