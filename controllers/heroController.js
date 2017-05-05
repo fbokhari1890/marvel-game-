@@ -1,4 +1,4 @@
-const hero = require('../models/heroModel');
+const Hero = require('../models/heroModel');
 const controller =   {};
 
 
