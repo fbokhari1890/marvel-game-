@@ -3,8 +3,8 @@
 <form method = 'POST' action = '/hero/<%= id %>?_method=PUT'>
   <input name = 'name' type = 'text' value= '<%= hero.name %>' />
   <input name = 'real name' type='text' value= '<%= hero.realname %>' />
-  <input name = 'location' type  = 'text' value= '<%= hero.location %>' />
-  <input  name= 'descroption' type = 'text'value=' <%= hero.description %>'/>
+  <input name = 'location_id' type  = 'text' value= '<%= hero.location_id %>' />
+  <input  name= 'description' type = 'text'value=' <%= hero.description %>'/>
   <input type='submit' value='Edit it!' />
 </form>
 

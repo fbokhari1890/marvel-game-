@@ -11,11 +11,11 @@
 <div class = 'my-hero'>
   <h2 class = 'name'> <%= hero.name %> </h2>
   <h2 class = 'name'> <%= hero.realname %> </h2>
-  <h2 class = 'name'> <%= hero.location %> </h2>
+  <h2 class = 'name'> <%= hero.location_name %> </h2>
   <h3 class = 'name'> <%= hero.description %> </h3>
 
 <a href='/hero/add'>Add a Super Hero!</a>
-<a href='hero/edit/<%= hero.id %>'>Edit SuperHero</a>  
+<a href='/hero/edit/<%= hero.id %>'>Edit SuperHero</a>  
 <form 
    method='POST' action='/hero/<%= hero.id %>?_method=DELETE'>
    <input type='submit' value='Pow!' />

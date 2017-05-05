@@ -2,7 +2,7 @@ const db = require('../db/config.js');
 const Hero = {};
 
 Hero.findAll = () => {
-  return db.query('SELECT * FROM hero ORDER BY id ASC');     
+  return db.query('SELECT hero.id, location.location_name, hero.name, hero.realName, hero.description From hero INNER JOIN location ON hero.location_id = location.id');     
 
   // 'SELECT location.location_name, hero.name, hero.realName , hero.description FROM hero INNER JOIN location ON hero.location_id = location.id'
 };
@@ -10,7 +10,7 @@ Hero.findAll = () => {
 
 
 Hero.findById = id => {
-  return db.query('SELECT * FROM hero where id = $1'[id]);
+  return db.oneOrNone('SELECT * FROM hero WHERE id = $1', [id]);
 };
 
 
@@ -26,6 +26,8 @@ Hero.create = hero => {
 };
 
 Hero.update = (hero, id) => {
+  console.log(hero);
+  console.log(id);
   return db.none(
     
     `
@@ -34,7 +36,7 @@ Hero.update = (hero, id) => {
      realname = $2,
      location_id = $3,
      description = $4
-     WHERE id = $4
+     WHERE id = $5
     `, 
 
     [hero.name,hero.realname, hero.location_id, hero.description,id] 

@@ -45,6 +45,7 @@ controller.create = (req,res) => {
 };
 
 controller.edit = (req, res) => {
+  console.log('hello')
   Hero.findById(req.params.id) 
     .then(hero => {
     console.log(hero);
@@ -55,6 +56,7 @@ controller.edit = (req, res) => {
     });
   })
     .catch(err=>{
+      console.log('hello im here');
       res.status(400).json(err);
     });
 };
@@ -64,7 +66,7 @@ controller.update = (req,res) =>{
   Hero.update({
     name: req.body.name,
     realname: req.body.name,
-    location_name: req.body.location_name,
+    location_id: req.body.location_id,
     description: req.body.description,
   }, req.params.id)
     .then(hero=>{
