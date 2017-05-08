@@ -1,0 +1,47 @@
+.intro{
+ display: flex;
+ background: url('https://s-media-cache-ak0.pinimg.com/originals/8b/f8/36/8bf8368dcb00378f3ae9a7bf085eee66.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
+a:hover, input[type='submit']:hover {
+  background-color: #E8760C;
+  adding: 2px;
+  border-radius: 10px;
+  border-style: inset black;
+  font-size: 30px;
+}
+
+
+
+.wrapper{
+  background-color: black;
+}
+
+
+.create {
+  display: flex;
+  background-color: #E89E34;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 125px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  display: inline-block;
+}
+
+
+
+.error{
+  
+
+
+}

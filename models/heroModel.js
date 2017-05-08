@@ -2,7 +2,7 @@ const db = require('../db/config.js');
 const Hero = {};
 
 Hero.findAll = () => {
-  return db.query('SELECT hero.id, location.location_name, hero.name, hero.realName, hero.description From hero INNER JOIN location ON hero.location_id = location.id');     
+  return db.query('SELECT hero.id, location.location_name, hero.name, hero.realName, hero.image, hero.description From hero INNER JOIN location ON hero.location_id = location.id');     
 
   // 'SELECT location.location_name, hero.name, hero.realName , hero.description FROM hero INNER JOIN location ON hero.location_id = location.id'
 };

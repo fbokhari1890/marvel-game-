@@ -34,6 +34,7 @@ controller.create = (req,res) => {
     name: req.body.name,
     realname: req.body.name,
     location_name: req.body.location_name,
+    image: req.body.image,
     description: req.body.description,
   })
       .then(hero=> {
@@ -67,6 +68,7 @@ controller.update = (req,res) =>{
     name: req.body.name,
     realname: req.body.name,
     location_id: req.body.location_id,
+    image: req.body.image,
     description: req.body.description,
   }, req.params.id)
     .then(hero=>{

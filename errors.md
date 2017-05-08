@@ -21,3 +21,5 @@ npm ERR!     /Users/fahimbokhari/GA/projects/unit02/project_2/npm-debug.log
 
 
 I was missing a comma in my script section.
+
+Hero was supposed to be called not hero data

@@ -1,4 +1,4 @@
-\connect hero_table
+\connect hero_table_2
 
 CREATE TABLE IF NOT EXISTS location (
   id BIGSERIAL PRIMARY KEY,
